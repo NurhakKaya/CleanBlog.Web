@@ -4,6 +4,17 @@
 	Layout = "master.cshtml";
 }
 
-@* the fun starts here *@
+<div style="color:@Model.ColourName">
+	<h1>@Model.Title</h1>
 
-@Model.Title
+	@Model.MainContent
+
+	<p>Your favourite colour is @Model.ColourName</p>
+</div>
+
+@if(Model.ShowImage)
+{
+	<img style="width:100%;" src="/media/3w5nu3an/cat.jpg" title="cat picture"/>
+}
+
+<p>If we weren't using the Models Builder then we'd have used the property alias like this, to get the value of the property: @Model.Value("colourName")</p>
