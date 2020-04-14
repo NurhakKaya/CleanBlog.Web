@@ -1,3 +1,15 @@
 -Useful websites
 https://codeshare.co.uk/blog/basic-html5-template-layout-example/
 https://unsplash.com/
+https://startbootstrap.com/
+https://startbootstrap.com/themes/clean-blog/
+After downloading the theme, following files are what I need at the begining;
+-css folder
+-img folder
+-js folder
+-vendor folder
+-about.html
+-contact.html
+-index.html
+-post.html
+http://umbracians.chat/
