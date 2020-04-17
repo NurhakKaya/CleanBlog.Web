@@ -2241,6 +2241,8 @@
     <Content Include="Umbraco\Views\Default.cshtml" />
     <Content Include="Umbraco\Views\Preview\Index.cshtml" />
     <Content Include="Umbraco\Views\web.config" />
+    <Content Include="Views\Partials\navigation.cshtml" />
+    <Content Include="Views\Partials\footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

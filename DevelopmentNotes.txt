@@ -13,3 +13,5 @@ After downloading the theme, following files are what I need at the begining;
 -index.html
 -post.html
 http://umbracians.chat/
+https://github.com/mattou07/iis-builder
+This is for quick local IIS setup with SSL certificate
