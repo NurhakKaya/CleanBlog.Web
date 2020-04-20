@@ -1,30 +1,15 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
-	Layout = "master.cshtml";
+    Layout = "master.cshtml";
 }
 
-@* the fun starts here *@
-
-<!-- Page Header -->
-<header class="masthead" style="background-image: url('/img/home-bg.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1>@Model.Name</h1>
-                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+@Html.Partial("~/Views/Partials/pageHeader.cshtml")
 
 <div class="container">
     <form action="/search/" method="GET" id="search">
         <div class="col-lg-8 col-md-10 mx-auto">
             <div class="form-group controls">
-                <input type="text" class="form-control col-xs-6" placeholder="Search for something..." name="q" value=""/>
+                <input type="text" class="form-control col-xs-6" placeholder="Search for something..." name="q" value="" />
             </div>
         </div>
         <div class="col-lg-8 col-md-10 mx-auto">
@@ -36,6 +21,6 @@
             <p>There are no search results</p>
         </div>
     </form>
-    
+
 </div>
 

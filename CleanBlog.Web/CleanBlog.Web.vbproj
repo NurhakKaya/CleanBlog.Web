@@ -290,6 +290,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.html" />
     <Content Include="App_Data\Models\all.generated.cs" />
     <Content Include="App_Data\Models\models.generated.cs" />
     <Content Include="App_Data\TEMP\ClientDependency\NURHAK-DEV-dcbeaae71d7fec25e1d27b55637fe04d-map.xml" />
@@ -316,8 +317,20 @@
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="config\splashes\noNodes.aspx" />
     <Content Include="contact.html" />
+    <Content Include="css\clean-blog.css" />
+    <Content Include="css\clean-blog.min.css" />
     <Content Include="Global.asax" />
+    <Content Include="img\about-bg.jpg" />
+    <Content Include="img\contact-bg.jpg" />
+    <Content Include="img\home-bg.jpg" />
+    <Content Include="img\post-bg.jpg" />
+    <Content Include="img\post-sample-image.jpg" />
     <Content Include="index.html" />
+    <Content Include="js\clean-blog.js" />
+    <Content Include="js\clean-blog.min.js" />
+    <Content Include="js\contact_me.js" />
+    <Content Include="js\jqBootstrapValidation.js" />
+    <Content Include="post.html" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />
     <Content Include="Umbraco\assets\css\nonodes.style.min.css" />
@@ -2048,6 +2061,37 @@
     <Content Include="Umbraco\Views\users\views\groups\groups.html" />
     <Content Include="Umbraco\Views\users\views\users\users.html" />
     <Content Include="Umbraco\Views\users\views\user\details.html" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\fontawesome-free\css\all.css" />
+    <Content Include="vendor\fontawesome-free\css\all.min.css" />
+    <Content Include="vendor\fontawesome-free\css\brands.css" />
+    <Content Include="vendor\fontawesome-free\css\brands.min.css" />
+    <Content Include="vendor\fontawesome-free\css\fontawesome.css" />
+    <Content Include="vendor\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="vendor\fontawesome-free\css\regular.css" />
+    <Content Include="vendor\fontawesome-free\css\regular.min.css" />
+    <Content Include="vendor\fontawesome-free\css\solid.css" />
+    <Content Include="vendor\fontawesome-free\css\solid.min.css" />
+    <Content Include="vendor\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="vendor\fontawesome-free\css\v4-shims.css" />
+    <Content Include="vendor\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\jquery\jquery.slim.js" />
+    <Content Include="vendor\jquery\jquery.slim.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2119,6 +2163,8 @@
     <Content Include="App_Data\TEMP\NuCache\NuCache.Media.db" />
     <Content Include="App_Data\TEMP\TypesCache\umbraco-types.NURHAK-DEV.hash" />
     <Content Include="App_Data\TEMP\TypesCache\umbraco-types.NURHAK-DEV.list" />
+    <Content Include="IIS-Builder.ps1" />
+    <Content Include="iis-config.json" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -2250,6 +2296,31 @@
     <Content Include="Views\content.cshtml" />
     <Content Include="Views\search.cshtml" />
     <Content Include="Views\contact.cshtml" />
+    <Content Include="Views\Partials\pageHeader.cshtml" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="vendor\jquery\jquery.min.map" />
+    <Content Include="vendor\jquery\jquery.slim.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
