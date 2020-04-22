@@ -1,6 +1,8 @@
 -Useful websites
 https://codeshare.co.uk/blog/basic-html5-template-layout-example/
 https://unsplash.com/
+https://fontawesome.com/icons/umbraco?style=brands
+https://fontawesome.com/start https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself--> to download the font awesome free version to use in the project
 https://startbootstrap.com/
 https://startbootstrap.com/themes/clean-blog/
 After downloading the theme, following files are what I need at the begining;
