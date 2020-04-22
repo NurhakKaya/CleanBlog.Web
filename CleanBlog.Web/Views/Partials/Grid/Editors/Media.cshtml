@@ -2,22 +2,27 @@
 @using Umbraco.Web.Templates
 
 @if (Model.value != null)
-{   
+{
     var url = Model.value.image;
-    if(Model.editor.config != null && Model.editor.config.size != null){
+    if (Model.editor.config != null && Model.editor.config.size != null)
+    {
         url += "?width=" + Model.editor.config.size.width;
         url += "&height=" + Model.editor.config.size.height;
 
-        if(Model.value.focalPoint != null){
-            url += "&center=" + Model.value.focalPoint.top +"," + Model.value.focalPoint.left;
+        if (Model.value.focalPoint != null)
+        {
+            url += "&center=" + Model.value.focalPoint.top + "," + Model.value.focalPoint.left;
             url += "&mode=crop";
         }
     }
 
     var altText = Model.value.altText ?? Model.value.caption ?? string.Empty;
-    
+
+    // We can create our custom editors or update the existing ones if we want to.
+    // For example; image width can be restricted to 800px like this
+    @*<img src="@url?width=800" alt="@altText">*@
     <img src="@url" alt="@altText">
-    
+
     if (Model.value.caption != null)
     {
         <p class="caption">@Model.value.caption</p>

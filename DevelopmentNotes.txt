@@ -15,3 +15,7 @@ After downloading the theme, following files are what I need at the begining;
 http://umbracians.chat/
 https://github.com/mattou07/iis-builder
 This is for quick local IIS setup with SSL certificate
+
+CleanBlog.Core class library only has UmbracoCms.Web installed, not UmbracoCms.Core or UmbracoCms. 
+We also make sure that package version is the same as the web project's version number(not the latest number)
+

@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supporting Files", "Support
 		DevelopmentNotes.txt = DevelopmentNotes.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanBlog.Core", "CleanBlog.Core\CleanBlog.Core.csproj", "{D86E8AE6-1C65-422C-BA73-FFB03053DBA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{CA9B7E54-528C-4B0F-BE88-5A2DDA212986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9B7E54-528C-4B0F-BE88-5A2DDA212986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9B7E54-528C-4B0F-BE88-5A2DDA212986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D86E8AE6-1C65-422C-BA73-FFB03053DBA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86E8AE6-1C65-422C-BA73-FFB03053DBA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86E8AE6-1C65-422C-BA73-FFB03053DBA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86E8AE6-1C65-422C-BA73-FFB03053DBA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
