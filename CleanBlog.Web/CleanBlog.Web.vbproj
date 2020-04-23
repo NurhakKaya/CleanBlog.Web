@@ -291,8 +291,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
-    <Content Include="App_Data\Models\all.generated.cs" />
-    <Content Include="App_Data\Models\models.generated.cs" />
+    <Content Include="App_Data\Models\Article.generated.cs" />
+    <Content Include="App_Data\Models\ArticleControls.generated.cs" />
+    <Content Include="App_Data\Models\ArticleList.generated.cs" />
+    <Content Include="App_Data\Models\Contact.generated.cs" />
+    <Content Include="App_Data\Models\ContactFormControls.generated.cs" />
+    <Content Include="App_Data\Models\Content.generated.cs" />
+    <Content Include="App_Data\Models\ContentControls.generated.cs" />
+    <Content Include="App_Data\Models\Error.generated.cs" />
+    <Content Include="App_Data\Models\File.generated.cs" />
+    <Content Include="App_Data\Models\Folder.generated.cs" />
+    <Content Include="App_Data\Models\FooterControls.generated.cs" />
+    <Content Include="App_Data\Models\HeaderControls.generated.cs" />
+    <Content Include="App_Data\Models\Home.generated.cs" />
+    <Content Include="App_Data\Models\IconLinkItem.generated.cs" />
+    <Content Include="App_Data\Models\Image.generated.cs" />
+    <Content Include="App_Data\Models\MainImageControls.generated.cs" />
+    <Content Include="App_Data\Models\Member.generated.cs" />
+    <Content Include="App_Data\Models\Search.generated.cs" />
+    <Content Include="App_Data\Models\SEocontrol.generated.cs" />
+    <Content Include="App_Data\Models\VisibilityControls.generated.cs" />
+    <Content Include="App_Data\Models\XMlsitemap.generated.cs" />
     <Content Include="App_Data\TEMP\ClientDependency\NURHAK-DEV-dcbeaae71d7fec25e1d27b55637fe04d-map.xml" />
     <Content Include="App_Data\TEMP\DistCache\LMW3SVC2ROOT-lastsynced.txt" />
     <Content Include="config\grid.editors.config.js" />
@@ -2136,8 +2155,6 @@
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="App_Data\Logs\UmbracoTraceLog.NURHAK-DEV.20200410.json" />
-    <Content Include="App_Data\Models\all.dll.path" />
-    <Content Include="App_Data\Models\models.hash" />
     <Content Include="App_Data\packages\createdPackages.config" />
     <Content Include="App_Data\packages\installedPackages.config" />
     <Content Include="App_Data\TEMP\ClientDependency\1_36be57c5db8f4a5ea4bcaa5210eb78be.cdJ" />

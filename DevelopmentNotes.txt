@@ -21,3 +21,4 @@ This is for quick local IIS setup with SSL certificate
 CleanBlog.Core class library only has UmbracoCms.Web installed, not UmbracoCms.Core or UmbracoCms. 
 We also make sure that package version is the same as the web project's version number(not the latest number)
 
+Windows sign on keyboard and . opens up emojies so this can be used infront of Umbraco form names
