@@ -22,3 +22,10 @@ CleanBlog.Core class library only has UmbracoCms.Web installed, not UmbracoCms.C
 We also make sure that package version is the same as the web project's version number(not the latest number)
 
 Windows sign on keyboard and . opens up emojies so this can be used infront of Umbraco form names
+
+For contactForm.cshtml contactForm.js - we have installed these packages: 
+	Install-Package Microsoft.JQuery.Unobtrusive.Validation
+	Install-Package Microsoft.JQuery.Unobtrusive.Ajax
+
+https://chocolatey.org/install#individual
+https://chocolatey.org/packages/smtp4dev - dev test smtp server for sending&receiving e-mails
