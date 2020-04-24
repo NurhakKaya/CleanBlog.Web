@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supporting Files", "Supporting Files", "{473E7BD5-3469-4CD3-A692-0E5B7177EEA5}"
 	ProjectSection(SolutionItems) = preProject
 		DevelopmentNotes.txt = DevelopmentNotes.txt
+		fontawesome-free-5.13.0-web.zip = fontawesome-free-5.13.0-web.zip
+		startbootstrap-clean-blog-gh-pages.zip = startbootstrap-clean-blog-gh-pages.zip
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanBlog.Core", "CleanBlog.Core\CleanBlog.Core.csproj", "{D86E8AE6-1C65-422C-BA73-FFB03053DBA5}"
