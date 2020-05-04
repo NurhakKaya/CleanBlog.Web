@@ -138,6 +138,9 @@
     <Reference Include="NPoco, Version=3.9.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NPoco.3.9.4\lib\net45\NPoco.dll</HintPath>
     </Reference>
+    <Reference Include="Our.Umbraco.EditLink, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.EditLink.1.0.2\lib\net472\Our.Umbraco.EditLink.dll</HintPath>
+    </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
@@ -329,6 +332,7 @@
     <Content Include="js\contact_me.js" />
     <Content Include="js\jqBootstrapValidation.js" />
     <Content Include="post.html" />
+    <Content Include="readme.txt" />
     <Content Include="scripts\contactForm.js" />
     <None Include="scripts\jquery-1.8.0.intellisense.js" />
     <Content Include="scripts\jquery-1.8.0.js" />

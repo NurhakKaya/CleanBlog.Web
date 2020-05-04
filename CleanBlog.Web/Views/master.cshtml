@@ -2,6 +2,7 @@
 
 @* ClientDependency minimizes our javascript and css for us, this also allows us to require certain ones from different views *@
 @using ClientDependency.Core.Mvc
+@using Our.Umbraco.EditLink
 
 @{
     Layout = null;
@@ -29,6 +30,7 @@
     @Html.RenderCssHere() @*ClientDependency CSS will be rendered here*@
 </head>
 <body>
+    @Html.RenderEditLink(Model)
     @Html.Partial("~/Views/Partials/navigation.cshtml")
     @RenderBody()
     @Html.Partial("~/Views/Partials/footer.cshtml")
