@@ -29,3 +29,6 @@ For contactForm.cshtml contactForm.js - we have installed these packages:
 
 https://chocolatey.org/install#individual
 https://chocolatey.org/packages/smtp4dev - dev test smtp server for sending&receiving e-mails
+https://github.com/prjseal/SlackBotMessages
+https://github.com/prjseal/Our.Umbraco.EditLink
+
