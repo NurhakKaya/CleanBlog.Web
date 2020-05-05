@@ -239,6 +239,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\CustomGlobal.cs" />
     <Compile Include="Composers\ApplicationComposer.cs" />
     <Compile Include="Composers\RegisterServicesComposer.cs" />
     <Compile Include="Controllers\ContactSurfaceController.cs" />

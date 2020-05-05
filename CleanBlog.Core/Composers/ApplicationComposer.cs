@@ -20,28 +20,29 @@ namespace CleanBlog.Core.Composers
             {
                 // A simple example of a message which looks like it has been send by an alien
                 var client = new SbmClient(WebConfigurationManager.AppSettings["SlackBotMessagesWebHookUrl"]);
-
+                
                 var message = new Message
                 {
-                    Username = "Alien",
-                    Text = "Hello from an Alien",
+                    Username = "Website Robot",
+                    //Username = "Alien",
+                    //Text = "Hello from an Alien",
+                    //IconEmoji = Emoji.Alien
                     IconEmoji = ":robot_face:",
                     Attachments = new List<Attachment>()
-                {
-                    new Attachment()
                     {
-                        Fallback="Clean Blog Website Started",
-                        Color="good",
-                        Fields=new List<Field>()
+                        new Attachment()
                         {
-                            new Field()
+                            Fallback = "Clean Blog Website Started",
+                            Color = "good",
+                            Fields = new List<Field>()
                             {
-                                Value="Clean Blog Website Started"
+                                new Field()
+                                {
+                                    Value = "Clean Blog Website Started"
+                                }
                             }
                         }
                     }
-                }
-                    //IconEmoji = Emoji.Alien
                 };
 
                 client.Send(message);
