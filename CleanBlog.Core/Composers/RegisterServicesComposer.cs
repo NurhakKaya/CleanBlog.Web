@@ -13,6 +13,7 @@ namespace CleanBlog.Core.Composers
             // composition.Register<ISiteService, SiteService>(Lifetime.Request);
             // if not then it is better to register in 'Singleton' Scope
             composition.Register<ISmtpService, SmtpService>(Lifetime.Singleton);
+            composition.Register<IArticleService, ArticleService>(Lifetime.Request);
         }
     }
 }
