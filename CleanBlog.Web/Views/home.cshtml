@@ -2,8 +2,18 @@
 
 @{
     Layout = "master.cshtml";
+    var leaveMessage = Model.LeaveMessage;
 }
 
 @Html.Partial("~/Views/Partials/pageHeader.cshtml")
 
 @Html.Partial("~/Views/Partials/latestArticles.cshtml")
+
+@section ScriptsBottom{
+    <script type="text/javascript">
+        // If you want to set the leave message you can set it from the page you are using it on and then call the init method
+        // This could be used to warn website users for something before they are about to close the window, like you still have items in your shopping cart etc.
+        PDG.leaveMessage = '@leaveMessage';
+        PDG.init();
+    </script>
+}

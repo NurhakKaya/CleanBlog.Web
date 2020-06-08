@@ -31,4 +31,5 @@ https://chocolatey.org/install#individual
 https://chocolatey.org/packages/smtp4dev - dev test smtp server for sending&receiving e-mails
 https://github.com/prjseal/SlackBotMessages
 https://github.com/prjseal/Our.Umbraco.EditLink
+https://pixelarity.com/ - This is to download almost 100 templates for $19(3 month subscription is all I need to download all the templates to use anytime I want)
 
