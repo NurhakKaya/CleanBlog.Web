@@ -33,4 +33,7 @@ https://github.com/prjseal/SlackBotMessages
 https://github.com/prjseal/Our.Umbraco.EditLink
 https://pixelarity.com/ - This is to download almost 100 templates for $19(3 month subscription is all I need to download all the templates to use anytime I want)
 https://our.umbraco.com/documentation/implementation/services/
+https://afarkas.github.io/lazysizes/index.html - Ligthweight lazyLoader which lazy loads images (including responsive images, iframes and scripts), written in VanillaJS and with high perfromance in mind.
+Google's lighthouse apparently recommends using lazyLoader for high performance of rendering images etc. (https://developers.google.com/web/tools/lighthouse) 
+https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/unveilhooks - lazyLoader unveilhooks
 

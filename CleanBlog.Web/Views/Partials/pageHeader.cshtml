@@ -5,10 +5,13 @@
     var subtitle = Model.HasValue("subtitle") ? Model.Value<string>("subtitle") : "";
     var image = Model.Value<IPublishedContent>("mainImage", fallback: Fallback.ToAncestors); // fallback will pull thru the header image from Home page if it is not set on the child page
 
+    string smallImageUrl = "";
     string imageUrl = "";
     if (image != null)
     {
-        imageUrl = image.GetCropUrl(1903, 532); // we get the width and height by checking the image url on the template
+        /*imageUrl = image.GetCropUrl(1903, 532);*/ // we get the width and height by checking the image url on the template
+        smallImageUrl = image.GetCropUrl("PageHeader.Tiny"); // In Umbraco>Settings>DataTypes>Image Cropper, we have defined 2 crops, one for large and one for tiny, we are using the large settings here.
+        imageUrl = image.GetCropUrl("PageHeader.Large");
     }
 
     string authorName = Model.HasProperty("authorName") && Model.HasValue("authorName") ? Model.Value<string>("authorName") : "";
@@ -18,7 +21,7 @@
 }
 
 <!-- Page Header -->
-<header class="masthead" style="@(!string.IsNullOrWhiteSpace(imageUrl)? "background-image: url('" + imageUrl + "')":null)">
+<header class="masthead lazyload" data-bg="@(!string.IsNullOrWhiteSpace(imageUrl)?imageUrl:null)" style="@(!string.IsNullOrWhiteSpace(smallImageUrl)? "background-image: url('" + smallImageUrl + "')":null)">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">

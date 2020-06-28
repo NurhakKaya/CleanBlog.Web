@@ -7,7 +7,9 @@
 
 @Html.Partial("~/Views/Partials/pageHeader.cshtml")
 
-@Html.Partial("~/Views/Partials/latestArticles.cshtml")
+@*Note: In order to test CachedPartial in dev, make sure in the web.config debug mode is set to true and
+    DateTime.Now be put anywhere on the page and this can be used to understand whether things are cached for the partial or not*@
+@Html.CachedPartial("~/Views/Partials/latestArticles.cshtml", Model, 3600, true)
 
 @section ScriptsBottom{
     <script type="text/javascript">

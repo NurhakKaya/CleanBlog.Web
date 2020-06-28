@@ -47,7 +47,7 @@
                             <div class="paging-block">
                                 @if (resultSet.PageNumber > 1)
                                 {
-                                    <a class="btn btn-primary float-left" href="@($"{Model.Url}?page={resultSet.PageNumber-1}&size={resultSet.PageSize}")">@Umbraco.GetDictionaryValue("Paging.Previous")</a>
+                                    <a class="btn btn-primary float-left" href="@($"{resultSet.Url}?page={resultSet.PageNumber-1}&size={resultSet.PageSize}")">@Umbraco.GetDictionaryValue("Paging.Previous")</a>
                                 }
                                 else
                                 {
@@ -60,7 +60,7 @@
                             <div class="paging-block">
                                 @if (resultSet.PageNumber < resultSet.PageCount)
                                 {
-                                    <a class="btn btn-primary float-right" href="@($"{Model.Url}?page={resultSet.PageNumber+1}&size={resultSet.PageSize}")">@Umbraco.GetDictionaryValue("Paging.Next")</a>
+                                    <a class="btn btn-primary float-right" href="@($"{resultSet.Url}?page={resultSet.PageNumber+1}&size={resultSet.PageSize}")">@Umbraco.GetDictionaryValue("Paging.Next")</a>
                                 }
                                 else
                                 {
@@ -71,7 +71,7 @@
                     }
                     else
                     {
-                        <a class="btn btn-primary float-right" href="@(Model.Url)">@Umbraco.GetDictionaryValue("ArticleList.ViewAll")</a>
+                        <a class="btn btn-primary float-right" href="@(resultSet.Url)">@Umbraco.GetDictionaryValue("ArticleList.ViewAll")</a>
                     }
                 </div>
             </div>

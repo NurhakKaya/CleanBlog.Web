@@ -49,7 +49,8 @@ namespace CleanBlog.Core.Services
                 PageNumber = pageNumber,
                 PageSize = pageSize,
                 Results = pageOfArticles,
-                IsArticleListPage=isArticleListPage
+                IsArticleListPage = isArticleListPage,
+                Url = articleList.Url
             };
         }
     }
