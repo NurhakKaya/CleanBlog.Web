@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
 using CleanBlog.Core.Services;
+using System;
 
 namespace CleanBlog.Core.Controllers
 {
@@ -18,6 +19,16 @@ namespace CleanBlog.Core.Controllers
         [HttpGet]
         public ActionResult RenderForm()
         {
+            var cententService = Services.ContentService;
+
+            var newArticle = cententService.Create("Test 2 issue 7361", 3080, "article");
+            newArticle.ContentSchedule.Add(DateTime.Now.AddDays(1), DateTime.Now.AddDays(30));
+            var newArticleResult = cententService.SaveAndPublish(newArticle);
+
+
+            var newArticleTest = cententService.GetById(newArticleResult.Content.Id);
+
+
             ContactViewModel model = new ContactViewModel() { ContactFormId = CurrentPage.Id };
             return PartialView("~/Views/Partials/Contact/contactForm.cshtml", model);
         }
@@ -44,6 +55,6 @@ namespace CleanBlog.Core.Controllers
             return PartialView("~/Views/Partials/Contact/result.cshtml", success ? successMessage : errorMessage);
         }
 
-       
+
     }
 }
